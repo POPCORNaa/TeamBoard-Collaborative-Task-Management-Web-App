@@ -1,0 +1,36 @@
+services:
+  backend:
+    image: ${BACKEND_IMAGE}
+    ports:
+      - "3000:3000"
+    environment:
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://lgtm:4318
+      OTEL_TRACES_EXPORTER: otlp
+      OTEL_METRICS_EXPORTER: otlp
+      OTEL_LOGS_EXPORTER: otlp
+      OTEL_SERVICE_NAME: backend_service
+      NODE_ENV: production
+      MONGO_URI: ${MONGO_URI}
+    networks:
+      - default
+      - observability
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  frontend:
+    image: ${FRONTEND_IMAGE}
+    ports:
+      - "80:80"
+    networks:
+      - default
+      - observability
+    restart: always
+
+networks:
+  observability:
+    external: true

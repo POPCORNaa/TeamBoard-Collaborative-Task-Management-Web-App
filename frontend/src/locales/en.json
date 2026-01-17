@@ -1,0 +1,63 @@
+{
+  "app": {
+    "title": "Task Manager"
+  },
+  "nav": {
+    "tasks": "Tasks",
+    "teams": "Teams",
+    "calendar": "Calendar"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "yourTasks": "Your Tasks",
+    "addTask": "+ Add Task",
+    "noTasks": "No tasks yet. Create your first task!"
+  },
+  "task": {
+    "newTask": "New Task",
+    "editTask": "Edit Task",
+    "title": "Task title",
+    "description": "Description (optional)",
+    "priority": "Priority",
+    "low": "Low Priority",
+    "medium": "Medium Priority",
+    "high": "High Priority",
+    "dueDate": "Due Date",
+    "status": "Status",
+    "todo": "To Do",
+    "inProgress": "In Progress",
+    "done": "Done",
+    "create": "Create",
+    "update": "Update",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this task?"
+  },
+  "teams": {
+    "yourTeams": "Your Teams",
+    "createTeam": "+ Create Team",
+    "joinTeam": "Join Team",
+    "noTeams": "No teams yet. Create or join a team!",
+    "teamName": "Team name",
+    "description": "Description (optional)",
+    "inviteCode": "Enter invite code",
+    "create": "Create",
+    "join": "Join",
+    "cancel": "Cancel",
+    "leave": "Leave Team",
+    "members": "Members",
+    "code": "Invite Code",
+    "confirmLeave": "Are you sure you want to leave this team?"
+  }
+}
